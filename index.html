@@ -68,12 +68,35 @@
         }
 
         .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
             font-size: 1.5rem;
             font-weight: 800;
+        }
+
+        .logo-text {
             background: linear-gradient(135deg, var(--primary), var(--secondary));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
+        }
+
+        .logo-emblem {
+            width: 32px;
+            height: 32px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 2px 8px rgba(139, 92, 246, 0.3);
+        }
+
+        .logo-emblem svg {
+            width: 20px;
+            height: 20px;
+            fill: white;
         }
 
         .nav-links {
@@ -701,7 +724,17 @@
     <!-- Navigation -->
     <nav>
         <div class="container">
-            <div class="logo">MCP Server</div>
+            <div class="logo">
+                <div class="logo-emblem">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"/>
+                        <circle cx="19" cy="7" r="2"/>
+                        <circle cx="19" cy="12" r="2"/>
+                        <circle cx="19" cy="17" r="2"/>
+                    </svg>
+                </div>
+                <span class="logo-text">MCP Server</span>
+            </div>
             <ul class="nav-links">
                 <li><a href="#why-mcp">Why MCP</a></li>
                 <li><a href="#creating">Creating</a></li>
@@ -722,10 +755,6 @@
                 </div>
                 <h1>The Foundation of <span>Agentic AI</span> Integration</h1>
                 <p>MCP Servers are the building blocks that enable AI agents to interact with the world. They provide standardized, secure interfaces for tools, data, and capabilities that power the next generation of autonomous AI systems.</p>
-                <div class="hero-cta">
-                    <a href="#why-mcp" class="btn btn-primary">Explore MCP Servers</a>
-                    <a href="https://agentmesh.ai" class="btn btn-secondary" target="_blank" rel="noopener">Learn More About Agent Mesh →</a>
-                </div>
             </div>
         </div>
     </section>
